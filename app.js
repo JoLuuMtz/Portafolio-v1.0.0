@@ -1,13 +1,7 @@
-// 
-// import Typed from 'typed.js';
 
 const body = document.body;
 const listaProyectos = document.querySelectorAll('.lista-proyectos');
 
-//reload page
-// document.getElementById("recargar").addEventListener("click", () => {
-//     location.reload();
-// });
 
 //cambio de icono de dark mode
 const darkIcono = document.getElementById("icono-dark-mode");
@@ -19,9 +13,9 @@ darkIcono.addEventListener("click", () => {
         document.querySelector('body').style.color = "black";
         listaProyectos.forEach(element => {
             element.style.backgroundColor = "white";
-            element.style.boxShadow = "-9px 9px 18px #5a5a5a",+
-    "9px -9px 18px #ffffff";
-    
+            element.style.boxShadow = "-9px 9px 18px #5a5a5a", +
+                "9px -9px 18px #ffffff";
+
         });
         document.getElementById("profile").style.boxShadow = "0px 0px 18px 2px  rgb(27, 0, 35)";
 
@@ -46,12 +40,6 @@ document.getElementById("repo-privado").addEventListener("click", () => {
 });
 
 // Menu responsive
-/*                 */
-
-
-
-// Efecto Letras 
-
 
 
 
