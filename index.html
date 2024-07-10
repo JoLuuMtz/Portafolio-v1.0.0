@@ -13,10 +13,12 @@
 
 <body>
     <header>
+
+        <div class="logo">
+            <p class="iconoLogo"><a href=""><small>{</small>JoLuu<small>}</small></a></p>
+        </div>
+
         <nav>
-            <div class="logo">
-                <p class="iconoLogo"><a href=""><small>{</small>JoLuu<small>}</small></a></p>
-            </div>
 
             <div class="menu-toggle">
                 <div class="bar1"></div>
@@ -31,13 +33,17 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+
             </ul>
 
         </nav>
+
         <i class="dark-icon">
             <img id="icono-dark-mode" src="assets/oscuro.png" alt="">
         </i>
     </header>
+
     <main>
         <section class="about" id="about">
             <div class="bio">
@@ -71,8 +77,8 @@
                         <h2>black-jack-v1</h2>
                         <p>
                             This is a games of card in which the
-                            objective is to reach a total of cards clos
-                            e to 21 without going over.
+                            objective is to reach a total of cards close
+                            to 21 without going over.
                         </p>
                         <a href="https://github.com/JoLuuMtz/black-jack-v1" target="_blank" rel="noopener">
                             <button class="btn-repo">repo</button></a>
@@ -84,10 +90,9 @@
                         <a href="https://corporacioncasadeamigosmundial.org/"><img class="img-Proj"
                                 src="assets/project/Casa-amigos.png" alt=""></a>
 
-                        <h2>Landing Page CAMUN</h2>
+                        <h2>CAMUN web site</h2>
                         <p>
-                            Landing page for a corporation dedicated
-                            to vulnerable people in the city of Cartagena de Indias
+                            Landing page for a corporation in the city of Cartagena de Indias.
                         </p>
 
                         <button id="repo-privado" class="btn-repo">repo</button>
@@ -277,39 +282,55 @@
     </main>
 
 
-    <footer>
+    <footer id="contact">
+
+        <div class="footer-contacto">
+
+            <h1>Contact</h1>
+            <p>Do you have any questions or want to work with me? <br> Contact me!</p>
+
+            <form action="send-email.php" method="POST" class="form-contacto">
+                <label id >Name <input type="text" name="name"required></label>
+                
+                <label>Email<input type="email" name="email"required></label>
+                <label>Message<textarea name="message"required></textarea></label>
+                <button type="submit" class=" btn-footer-send">Send</button>
+
+            </form>
+
+        </div>
+
 
         <div class="icono-footer">
 
         </div>
-        <div class="lista-footer">
 
-        </div>
 
         <div class="lista-redes">
 
             <ul>
                 <li> <a href="https://www.instagram.com/joluu.m/>" target="_blank" rel="noopener"><img class="img-redes"
-                            src="assets/contact/instagram.png" alt="instagram"></a></li>
+                            src="assets/contact/instagram.png" alt="instagram"></a>
+                </li>
 
                 <li><a href="https://twitter.com/JoLuMtz1" target="_blank" rel="noopener"><img class="img-redes"
                             src="assets/contact/x.png" alt="X"></a></li>
 
-                <li> <a href="https://www.linkedin.com/in/jorge-martinez-145a90257/>" target="_blank" rel="nooponer">
+                <li> <a href="https://www.linkedin.com/in/jorge-martinez-145a90257/>" target="_blank" rel="noopener">
                         <img class="img-redes" src="assets/contact/linkedin.png" alt="linkendin"> </a>
                 </li>
 
                 <li>
-                    <a href="https://github.com/JoLuuMtz" target="_blank" rel="noopener"><a class="img-redes"
-                            src="assets/contact/github.png" alt="github"></a>
+                    <a href="https://github.com/JoLuuMtz" target="_blank" rel="noopener"><img class="img-redes"
+                            src="assets/contact/github.png" alt="github"> </img> </a>
                 </li>
 
             </ul>
 
-            <span class="copyright"> All rights reserved. Copyright © 2024 JoLuuMtz. </span>
+
         </div>
 
-
+        <span class="copyright"> All rights reserved. Copyright © 2024 JoLuuMtz. </span>
 
 
     </footer>
@@ -317,8 +338,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <script>
 
+    <script>
         var typed = new Typed(".auto-type", {
             strings: [" JoLuu", " Jorge", " George ",],
             typeSpeed: 150,
