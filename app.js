@@ -39,7 +39,11 @@ document.getElementById("repo-privado").addEventListener("click", () => {
         "warning");
 });
 
-// Menu responsive
+
+//pantalla de carga de inicio 
+//ToDo
+
+
 
 
 
