@@ -18,16 +18,17 @@
             <p class="iconoLogo"><a href=""><small>{</small>JoLuu<small>}</small></a></p>
         </div>
 
-        <nav>
 
-            <div class="menu-toggle">
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3_h"></div>
                 <div class="bar4"></div>
             </div>
 
-            <ul class="menu">
+
+            <ul class="menu" id="menu">
 
                 <li><a href="#about"> About me</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -36,17 +37,17 @@
                 <li><a href="#contact">Contact</a></li>
 
             </ul>
-            <!-- <ul class="menu-reponsive">
+       
+                <ul class="menu-responsive" id="menu-responsive">
 
-                <li><a href="#about"> About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#contact">Contact</a></li>
+                    <li id="menu-item-selected"><a href="#about"> About me</a></li>
+                    <li id="menu-item-selected"><a href="#projects">Projects</a></li>
+                    <li id="menu-item-selected"><a href="#skills">Skills</a></li>
+                    <li id="menu-item-selected"><a href="#tools">Tools</a></li>
+                    <li id="menu-item-selected"><a href="#contact">Contact</a></li>
+                </ul>
 
-            </ul> -->
-
-
+        
         </nav>
 
         <i class="dark-icon">
@@ -82,8 +83,9 @@
                 <div class="lista-proyectos-container">
                     <div class="lista-proyectos">
                         <a href="https://joluumtz.github.io/black-jack-v1/">
-                            <img class="img-Proj" src="https://www.mpl.live/blog/wp-content/uploads/2023/10/Black-Jack.webp" alt="Blackjack Project"
-                                title="Blackjack Project"></a>
+                            <img class="img-Proj"
+                                src="https://www.mpl.live/blog/wp-content/uploads/2023/10/Black-Jack.webp"
+                                alt="Blackjack Project" title="Blackjack Project"></a>
                         <h2>black-jack-v1</h2>
                         <p>
                             This is a games of card in which the
@@ -175,56 +177,56 @@
                 <div class="lista-skills-img">
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/html.png" alt="HTLM">
-               
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/css.png" alt="CSS">
-                 
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/js.png" alt="JavaScript">
-                    
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/php.png" alt="php">
-                    
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/bootstrap.png" alt="boostrap">
-                     
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/mysql.png" alt="">
-                 
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/java.png" alt="">
-                     
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/wordpress.png" alt="Wordpress">
-                    
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/sql-server.png" alt="sql-Server">
-                  
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/csharp.png" alt="C#">
-                   
+
                     </div>
 
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/ASP.net.png" alt="ASP.net">
-                  
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/mongoDB.png" alt="Mongo">
-                   
+
                     </div>
                     <div class="skill">
                         <img class="skills-img" src="assets/skills/Angular.png" alt="Angular">
-              
+
                     </div>
                 </div>
             </div>
@@ -246,43 +248,43 @@
                 <div class="lista-tools-img">
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/docker.png" alt="HTLM">
-                      
+
                     </div>
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/elementor.png" alt="CSS">
-                    
+
                     </div>
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/visual-basico.png" alt="JavaScript">
-                     
+
                     </div>
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/xamp.png" alt="xamp">
-                       
+
                     </div>
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/git.png" alt="git">
-                    
+
                     </div>
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/github.png" alt="github">
-                    
+
                     </div>
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/console.png" alt="Shell">
-                  
+
                     </div>
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/photoshop.png" alt="photoshop">
-                   
+
                     </div>
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/postman.png" alt="postman">
-                        
+
                     </div>
                     <div class="tools">
                         <img class="tools-img" src="assets/tools/vscode.png" alt="VScode">
-                      
+
                     </div>
                 </div>
             </div>
@@ -300,10 +302,10 @@
             <p>Do you have any questions or want to work with me? <br> Contact me!</p>
 
             <form action="send-email.php" method="POST" class="form-contacto">
-                <label id >Name <input type="text" name="name"required></label>
-                
-                <label>Email<input type="email" name="email"required></label>
-                <label>Message<textarea name="message"required></textarea></label>
+                <label id>Name <input type="text" name="name" required></label>
+
+                <label>Email<input type="email" name="email" required></label>
+                <label>Message<textarea name="message" required></textarea></label>
                 <button type="submit" class=" btn-footer-send">Send</button>
 
             </form>
