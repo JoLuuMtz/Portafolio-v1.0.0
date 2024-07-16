@@ -43,6 +43,36 @@ document.getElementById("repo-privado").addEventListener("click", () => {
 //pantalla de carga de inicio 
 //ToDo
 
+// menu responsivo 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuResponsive = document.getElementById("menu-responsive");
+    menuToggle.classList.toggle("desactivado");
+
+    menuToggle.addEventListener("click", () => {
+       if(menuResponsive.style.display === "none" || menuResponsive.style.display === ""){
+           menuResponsive.style.display = "block";
+           menuToggle.classList.toggle("active");
+            
+       }else{
+              menuResponsive.style.display = "none";
+              menuToggle.classList.toggle("active");
+       }
+
+    });
+
+    const menuItems = document.querySelectorAll("#menu-item-selected");
+    menuItems.forEach(item => {
+        item.addEventListener("click", () => {
+            menuResponsive.style.display = "none";
+            menuToggle.classList.toggle("active");
+        });
+    });
+
+   
+});
+
 
 
 
