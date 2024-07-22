@@ -37,17 +37,17 @@
                 <li><a href="#contact">Contact</a></li>
 
             </ul>
-       
-                <ul class="menu-responsive" id="menu-responsive">
 
-                    <li id="menu-item-selected"><a href="#about"> About me</a></li>
-                    <li id="menu-item-selected"><a href="#projects">Projects</a></li>
-                    <li id="menu-item-selected"><a href="#skills">Skills</a></li>
-                    <li id="menu-item-selected"><a href="#tools">Tools</a></li>
-                    <li id="menu-item-selected"><a href="#contact">Contact</a></li>
-                </ul>
+            <ul class="menu-responsive" id="menu-responsive">
 
-        
+                <li id="menu-item-selected"><a href="#about"> About me</a></li>
+                <li id="menu-item-selected"><a href="#projects">Projects</a></li>
+                <li id="menu-item-selected"><a href="#skills">Skills</a></li>
+                <li id="menu-item-selected"><a href="#tools">Tools</a></li>
+                <li id="menu-item-selected"><a href="#contact">Contact</a></li>
+            </ul>
+
+
         </nav>
 
         <i class="dark-icon">
@@ -301,23 +301,20 @@
             <h1>Contact</h1>
             <p>Do you have any questions or want to work with me? <br> Contact me!</p>
 
-            <form action="send-email.php" method="POST" class="form-contacto">
-                <label id>Name <input type="text" name="name" required></label>
+            <form class="form-contacto">
+                <input type="text" name="name" required placeholder="Name">
 
-                <label>Email<input type="email" name="email" required></label>
-                <label>Message<textarea name="message" required></textarea></label>
-                <button type="submit" class=" btn-footer-send">Send</button>
+                <input type="email" name="email" required placeholder="E-mail">
+                <textarea name="message" required placeholder="Send me an Message"></textarea>
+
+                <button class="btn-footer-send"type="submit" id="enviarForm">Send</button>
 
             </form>
 
         </div>
 
 
-        <div class="icono-footer">
-
-        </div>
-
-
+      
         <div class="lista-redes">
 
             <ul>
