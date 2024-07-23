@@ -829,8 +829,6 @@ h1 {
 }
 
 
-
-
 /* Menu boton */
 
 .menu-toggle {
@@ -844,7 +842,6 @@ h1 {
     padding: 5px 5px;
     border-radius: 8px;
     cursor: pointer;
-
 
 }
 
@@ -1077,7 +1074,13 @@ footer {
 /* Fin Menu Responsive Mobile*/
 
 /* About me Responsive  */
+
 @media screen and (max-width: 780px) {
+
+    * {
+        font-family: cursive;
+    }
+
     body {
         margin: 0 auto;
     }
@@ -1172,7 +1175,9 @@ footer {
 
     .btn-see-more {
         padding: 2px;
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
