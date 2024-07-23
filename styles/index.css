@@ -6,17 +6,20 @@ html {
     font-size: 20px;
     margin: 0;
     overflow-x: hidden;
+    /* Evita que el contenido se desborde horizontalmente */
 
 
-    /* hace que no se desborde  en el eje x*/
 }
 
-*{
-    font-family: cursive;
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
-img{
+
+img {
     cursor: pointer;
 }
+
 .iconoLogo {
     position: absolute;
     width: 50px;
@@ -109,12 +112,13 @@ header {
 
     display: flex;
     position: absolute;
-  font-family: cursive;
+    font-family: 'Poppins', sans-serif, ;
     font-size: 20px;
     margin-top: 100px;
     margin-right: 500px;
     width: 600px;
     height: 100px;
+    font-style: bold;
 
 }
 
@@ -993,7 +997,7 @@ footer {
     font-size: 16px;
     border-radius: 4px;
     margin-top: 10px;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .form-contacto textarea {
@@ -1001,7 +1005,7 @@ footer {
     padding: 10px;
     border: 1px solid #ccc;
     background-color: transparent;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     color: white;
     font-size: 16px;
     border-radius: 4px;
@@ -1168,6 +1172,7 @@ footer {
 
     .btn-see-more {
         padding: 2px;
+        margin: 0 auto;
 
     }
 
