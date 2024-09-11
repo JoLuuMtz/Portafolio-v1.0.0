@@ -12,8 +12,7 @@ html {
 }
 
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 img {
@@ -1173,11 +1172,13 @@ footer {
 
     }
 
-    .btn-see-more {
-        padding: 2px;
+   .btn-see-more {
         display: flex;
         justify-content: center;
-        align-items: center;
+        margin: 50px 120px 15px 260px;
+        margin-left: 300px;
+        padding-left: 30px;
+        padding-right: 30px;
 
     }
 
